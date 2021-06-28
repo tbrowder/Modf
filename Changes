@@ -1,4 +1,7 @@
 Revision history for Modf
 
 {{$NEXT}}
+    - Correct pod in the README
+
+0.0.1  2021-06-28T23:23:15-06:00
     - Initial version
