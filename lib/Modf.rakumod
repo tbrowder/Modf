@@ -1,5 +1,4 @@
-unit module Modf:ver<0.0.1>:auth<zef:tbrowder>;
-
+unit module Modf:auth<zef:tbrowder>;
 
 sub modf($x is copy, $places? --> List) is export {
     # returns the integer and fractional parts of x
