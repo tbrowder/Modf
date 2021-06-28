@@ -24,16 +24,11 @@ modf
 
 ```raku
 sub modf($x is copy, $places? --> List) is export(:modf) {...}
-=begin code
+```
 
-The c<modf> routine (currently not available in the I<Raku> core) is
-similar to those in other languages including I<C>, I<C++>, I<Python>,
-and I<Haskell>. It coerces its input into a base 10 number and returns
-the integral and fractional parts in a list as shown below. (Note the
-C<modf> routine has been submitted as a PR for the Raku core and may
-be part of the language soon.)
+The c<modf> routine (currently not available in the *Raku* core) is similar to those in other languages including *C*, *C++*, *Python*, and *Haskell*. It coerces its input into a base 10 number and returns the integral and fractional parts in a list as shown below. (Note the `modf` routine has been submitted as a PR for the Raku core and may be part of the language soon.)
 
-=begin code :lang<raku>
+```raku
 say modf(3.24);  # OUTPUT: «3 0.24␤»
 say modf(-2.7);  # OUTPUT: «-2 -0.7␤»
 say modf(10);    # OUTPUT: «10 0␤»
