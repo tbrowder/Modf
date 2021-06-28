@@ -1,13 +1,13 @@
 {
   "auth": "zef:tbrowder",
   "authors": [
-    "Tom Browder"
+    "Tom Browder (tbrowder@acm.org)"
   ],
   "build-depends": [
   ],
   "depends": [
   ],
-  "description": "blah blah blah",
+  "description": "Provides routine 'modf' as used in other languages",
   "license": "Artistic-2.0",
   "name": "Modf",
   "perl": "6.d",
@@ -16,8 +16,10 @@
   },
   "resources": [
   ],
-  "source-url": "",
+  "source-url": "https://github.com/tbrowder/Modf.git",
   "tags": [
+    "mathematical routine",
+    "modf"
   ],
   "test-depends": [
   ],
