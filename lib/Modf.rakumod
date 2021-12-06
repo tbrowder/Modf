@@ -1,4 +1,4 @@
-unit module Modf:auth<zef:tbrowder>;
+unit module Modf;
 
 sub modf($x is copy, $places? --> List) is export {
     # returns the integer and fractional parts of x
@@ -7,7 +7,7 @@ sub modf($x is copy, $places? --> List) is export {
     #   the fractional part will be a decimal with leading '0.'
     #   zero values are '0' and are unsigned
     #   both parts take the sign of x unless they are zero
-    $x .= Real;
+    $x .= FatRat if $x > 123456789; # .Real;
 
     my $sign = $x.sign;
     $x .= abs; # now signless
@@ -23,7 +23,7 @@ sub modf($x is copy, $places? --> List) is export {
     $frac = 0 if $frac == 0;
 
     if $places.defined and $places > 0 {
-        $frac = sprintf '%.*f', $places, $frac;
+        $frac = sprintf('%.*f', $places, $frac);
     }
 
     $int, $frac
